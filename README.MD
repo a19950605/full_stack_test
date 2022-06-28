@@ -1,6 +1,6 @@
 # Full stack test
 
-#####to run the test
+##### to run the test
 Clone the repository first, then:
 
 ## frontend
@@ -21,6 +21,8 @@ api endpoint: http://localhost:6868/api/subscriptions
 there are 3 api create,get all and delete :
 ### create
 http method: post
+
+
 url= /
 ##### dummy request body:
 ```json
@@ -48,8 +50,10 @@ url= /
 }
 ```
 
-###get all plans
+### get all plans
+
 http method: get
+
 url= /
 
 
@@ -78,6 +82,9 @@ otherwise
 
 ### delete
 http method: delete
+
+
+
 url= /:deleteId
 
 sample
