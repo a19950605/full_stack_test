@@ -1,13 +1,12 @@
-to run the test
+# Full stack test
 
-
+#####to run the test
+Clone the repository first, then:
 
 ## frontend
 1. run ```node  npm i```
 
 2. run ```node npm start```
-
-
 
 ## backend
 
