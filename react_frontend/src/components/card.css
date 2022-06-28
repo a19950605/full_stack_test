@@ -1,0 +1,62 @@
+.card-body{
+    display:flex;
+    justify-content:center;
+}
+
+.card {
+    border-radius: 10px;
+    width:90%;
+    background:rgb(51, 6, 6);
+    padding-bottom:10px;
+  }
+  
+  .card-wrapper {
+    position:relative;
+    padding: 10px;
+  }
+  
+  h3 {
+    text-align: center;
+    padding: 10px;
+    color:deeppink
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  
+  .fail-icon {
+    color: red;
+  }
+  
+  button {
+    text-align: center;
+    border: none;
+    font-size:20px;
+    border-radius: 5px;
+    padding: 10px;
+  
+}
+
+.button-center{
+    display:flex;
+    justify-content:center;
+}
+.option-item{
+    background: #0061CF;
+    background: linear-gradient(to right, #0061CF 0%, #8525CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.selected-color{
+    color:white;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+display: flex;
+align-items: center;
+}
+h3{
+    display:inline-block;
+}

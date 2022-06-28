@@ -1,0 +1,16 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+
+}
+
+.nav-title{
+    background: #0061CF;
+    background: linear-gradient(to right, #0061CF 0%, #8525CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:28px;
+    font-weight: 600;
+    font-family: Arial,sans-serif;
+}
