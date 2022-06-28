@@ -4,9 +4,9 @@
 Clone the repository first, then:
 
 ## frontend
-1. run ```node  npm i```
+1. run ```  npm i```
 
-2. run ```node npm start```
+2. run ``` npm start```
 
 ## backend
 
