@@ -1,11 +1,14 @@
 to run the test
 
-the first way(shell script):
-run ./start.sh , then the dependencies of react and nodejs api will be install and start
 
-the second way (run separately )
-react:
-go to the react_test and run npm i to install the dependencies , then npm start
+##frontend
+1. run ```node  npm i```
 
-nodejs api:
-run docker-compose up -d at the top level in this repository
+2. run ```node npm start```
+
+
+
+##backend
+
+1. run start.sh , the shell script will install the dependencies for  nodejs and start the docker container
+2. run post.sh to create demo records 

@@ -33,11 +33,6 @@ function App() {
 		},
 		(error) => {
 			setError(true);
-
-			if (!error.response) {
-				console.log('Please check your internet connection.');
-			}
-
 			return Promise.reject(error);
 		}
 	);
@@ -50,7 +45,7 @@ function App() {
 				</div>
 			)}
 			{data.length == 0 && !loading && !error ? (
-				<div className="abs_pos">no data after api calling</div>
+				<div className="abs_pos white-txt" >no data after api calling</div>
 			) : (
 				''
 			)}

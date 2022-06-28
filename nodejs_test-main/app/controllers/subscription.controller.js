@@ -1,21 +1,18 @@
 const Subscription = require("../models/subscription.model.js");
-// Create and Save a new Tutorial
 exports.create = (req, res) => {
   if (!req.body) {
     res.status(400).send({
       message: "Content can not be empty!",
     });
   }
-  // Create a Tutorial
   const subscription = new Subscription({
     title: req.body.title,
-    general: req.body.general,
-    specialist: req.body.specialist,
-    physiotherapy: req.body.physiotherapy,
-    extraOne: req.body.extraOne,
-    extraTwo: req.body.extraTwo,
+    general: req.body.general||false,
+    specialist: req.body.specialist||false,
+    physiotherapy: req.body.physiotherapy||false,
+    extraOne: req.body.extraOne||false,
+    extraTwo: req.body.extraTwo||false,
   });
-  // Save Tutorial in the database
   Subscription.create(subscription, (err, data) => {
     console.log('hello')
     if (err)
@@ -26,7 +23,6 @@ exports.create = (req, res) => {
     else res.send(data);
   });
 };
-// Retrieve all Tutorials from the database (with condition).
 exports.findAll = (req, res) => {
   const title = req.query.title;
   Subscription.getAll(title, (err, data) => {
@@ -39,11 +35,6 @@ exports.findAll = (req, res) => {
   });
 };
 
-// Update a Tutorial identified by the id in the request
-// exports.update = (req, res) => {
-
-// };
-// Delete a Tutorial with the specified id in the request
 exports.delete = (req, res) => {
     Subscription.remove(req.params.id, (err, data) => {
         if (err) {
@@ -60,5 +51,5 @@ exports.delete = (req, res) => {
       });
     
 };
-// Delete all Tutorials from the database.
+// Delete all  from the database.
 exports.deleteAll = (req, res) => {};
