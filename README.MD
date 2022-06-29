@@ -3,15 +3,28 @@
 ##### to run the test
 Clone the repository first, then:
 
-## frontend
-1. run ```  npm i```
 
+
+
+## shell script start
+1. run ```start.sh``` , the shell script will install the dependencies for nodejs and start the docker container. After that, the dependencies of react frontend will be installed and start the application
+2. run ```post.sh``` to create demo records on mysql
+
+
+### to run seperately
+
+## frontend
+the react frontend should be started after running start.sh
+
+to install the dependencies and start seperately, use the command below
+1. run ```  npm i```
 2. run ``` npm start```
 
 ## backend
+run this command to build the docker container 
 
-1. run ```start.sh``` , the shell script will install the dependencies for  nodejs and start the docker container
-2. run ```post.sh``` to create demo records 
+1. docker-compose up -d
+2. run post.sh to create dummy data
 
 
 frontend :http://localhost:3000
